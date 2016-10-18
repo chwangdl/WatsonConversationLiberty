@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/public'));
 //app.use(express.static(path.join(__dirname, 'public')));
 
 //watson conversation handler
-app.use("/watson",require("./business_handlers/watson_conversation_sample"));
+app.use("/api/message",require("./business_handlers/watson_conversation_sample"));
 
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
